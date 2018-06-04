@@ -14,11 +14,12 @@ reads=$1 # bed format
 region=$2 # bed format 
 
 # output names
-suffix=${reads/*.//}
-prefix=${reads/.${suffix}/}
-out=${prefix}.filt.${suffix}
+out=${reads/.bed/.filt.bed}
 
-subtractBed -a $reads -b $region -A  | sort -k1,1 -k2,2n  
+subtractBed -a $reads -b $region -A  | sort -k1,1 -k2,2n  > $out
+
+echo -e "input reads:\t$(cat $reads | wc -l)" > ${out/.bed/.log}
+echo -e "output reads:\t$(cat $ | wc -l)">> ${out/.bed/.log}
 
 # eg:
 
