@@ -1,4 +1,6 @@
-# List of scripts #
+# atacCNV
+
+Call Copy Number Variation from ATAC-seq data. 
 
 ## Useage
 
