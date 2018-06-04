@@ -12,7 +12,7 @@ export PATH=$PATH:$(pwd)
 * [tagToFrag.sh](./tagToFrag.sh): covert `tagAlign` to fragments in `bed`, `sort.bdg` and `bw`  format. 
 * [readsMasker.sh](./readsMasker.sh): filter reads (in `bed` format) by given mask regions. 
 * [smoothBw.sh](./smoothBw.sh): smooth bigwig by sliding window (size - w and step - s)
-
+* [callCNV.R](./callCNV.R): call CNV from treat adjusted by mapb 
 
 
 ## Typical Steps:
