@@ -1,0 +1,14 @@
+*Rhistory
+.nfs* 
+*DS_Store
+data/*
+figs/*
+beds/*
+.Rproj.user*
+*\#*
+*.log
+.Rproj.user
+*e11*
+*o11* 
+._* 
+*figs*
