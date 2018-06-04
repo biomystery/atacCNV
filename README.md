@@ -20,7 +20,7 @@ export PATH=$PATH:$(pwd)
 1. Get output from pipleine: `tagAlign`, `peaks` (openning regions).
 2. (optional) Run `tagToFrag.sh`: get fragments `bed`, `bdg` and `bw`
 3. Run `readsMasker.sh` to filter out reads or frags in peak regions and get background frags. 
-4. Run `smoothBw.sh` to get average coverage in each window for both control or treatment
+4. Run `smoothBw.sh` to get average coverage in each window for both control or treatment. It will reorder the bed file, so that the it cannot preserve the pair info if input is in  `tagAlign` format. Please covert to fragment bed first. 
 5. Run `callCNV.sh` to get CNV regions, segment plots 
 
 ## Call Wrapper: 
